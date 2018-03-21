@@ -133,15 +133,13 @@ p.txt1 {
       @media only screen and (min-width: 768px) {
         .home_content_subtitulo {
           font-size: 1rem; } }
-    .home_content > * {
-      border: 1px solid red; }
     .home_content_titulo {
       color: var(--cor-subtitulo);
       font-size: 3rem;
       text-transform: uppercase;
       font-weight: 100;
       padding: 0;
-      margin: 0; }
+      margin: 0 0 60px; }
       @media only screen and (min-width: 768px) {
         .home_content_titulo {
           font-size: 2.9rem; } }
@@ -175,20 +173,28 @@ p.txt1 {
   align-items: center;
   justify-content: center; }
 
-.random1_content_subtitulo2 {
-  color: var(--verde-lima); }
-
-.random1_content_img img {
-  display: block;
-  margin: 0 auto;
-  max-height: 50vh; }
+.random1 {
+  display: flex;
+  align-items: flex-end; }
+  .random1_content {
+    display: flex;
+    align-items: center;
+    border: 1px solid red; }
+    .random1_content_subtitulo2 {
+      color: var(--verde-lima);
+      border: 1px solid red;
+      text-align: center; }
+    .random1_content_img img {
+      display: block;
+      margin: 0 auto;
+      max-height: 75vh; }
 
 .playlist {
   padding: 20px 0; }
   .playlist_content_slide1 {
     position: relative; }
     .playlist_content_slide1_img {
-      background-image: url("img/skollbeats_transparent.png");
+      background-image: url("../img/skollbeats_transparent.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -294,7 +300,7 @@ p.txt1 {
     max-width: 30%;
     display: inline; }
   .contato_content_form_btn {
-    background: url("./img/BG-cad.png");
+    background: url("../img/BG-cad.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
