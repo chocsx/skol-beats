@@ -28,7 +28,7 @@
 	<meta property="article:publisher" content="" />
 	<!-- Fim SEO -->
 	<link rel="stylesheet" href="./hamburguer.css">
-	<link rel="stylesheet" href="./jquery.fullpage.min.css">
+	<!-- <link rel="stylesheet" href="./jquery.fullpage.min.css"> -->
 	<link rel="stylesheet" href="./animate.css">
 	<link rel="stylesheet" href="./css/style.css?v=2">
 
@@ -68,27 +68,29 @@
 	</header>
 
 	<div id="fullpage">
-		<section class="wow fadeIn section home" id="home">
+		<section class="section home" id="home">
 			<div class="container home_content">
-				<h2 class="home_content_subtitulo">Sua assistente pessoal da noite.</h2>
-				<h1 class="home_content_titulo titulo1"><strong>smart</strong>beats</h1>
+				<h2 class="home_content_subtitulo wow fadeInDown" data-wow-delay="1s">Sua assistente pessoal da noite.</h2>
+				<h1 class="home_content_titulo titulo1 wow fadeInDown" data-wow-delay="1.5s"><strong>smart</strong>beats</h1>
 
 				<div class="home_content_img">
-					<div class="waves">
-						<img src="img/bg-first-section.png" alt="">
+					<div class="waves wow fadeInUp" data-wow-delay="2s">
+						<img src="img/bg-first-section-desk.png" alt="">
 					</div>
-					<div class="skol">
+					<div class="skol wow fadeInUp" data-wow-delay="2.5s">
 						<img src="img/skollWaves.png" alt="">	
+						<!-- <div class="play">
+							<img src="img/assista-video.png" alt="">	
+						</div> -->
 					</div>
-					
 				</div>
 			</div>
 		</section>
 
 		<section class="wow fadeIn section random1">
 			<div class="container random1_content">
-				<h2 class="random1_content_subtitulo2">Você pede, ela faz.</h2>
-				<div class="random1_content_img garrafaBG">
+				<h2 class="random1_content_subtitulo2 wow fadeInUp" data-wow-delay="2.5s">Você pede, ela faz.</h2>
+				<div class="random1_content_img garrafaBG wow fadeInUp" data-wow-delay="1s">
 					<img src="img/skollbeatsBG.png" alt="">
 				</div>
 			</div>
@@ -199,13 +201,13 @@
 				<div class="dicas_content_select">
 					<ul>
 						<li>
-							<p class="dicas_content_select_txt2 txt2">Smart Beats, manda uma mensagem pro crush</p>
+							<p class="dicas_content_select_txt2 txt2">Smart Beats, que <br>roupa devo usar hoje?</p>
 						</li>
 						<li>
-							<p class="dicas_content_select_txt txt2">Smart Beats, que roupa devo usar hoje</p>
+							<p class="dicas_content_select_txt txt2">Smart Beats, manda <br>uma mensagem pro crush.</p>
 						</li>
 						<li>
-							<p class="dicas_content_select_txt2 txt2">Smart Beats, me dá uma dica de xaveco?</p>
+							<p class="dicas_content_select_txt2 txt2">Smart Beats, me dá <br>uma dica de xaveco?</p>
 						</li>
 					</ul>
 				</div>
@@ -297,10 +299,13 @@
 					<!--        -->
 					<a class="contato_content_form_cep" href="">Não sei meu CEP</a>
 					<div class="contato_content_form_regulamento">
-						<input type="checkbox">
-						<a class="contato_content_form_regulamento_inner" href="">Li e aceito o regulamento</a>
+						<div class="contato_content_form_regulamento_check">
+							<input type="checkbox">
+							<a class="contato_content_form_regulamento_inner" href="">Li e aceito o regulamento</a>
+						</div>
+						<div class="contato_content_form_robot">robot</div>
 					</div>
-					<div class="contato_content_form_robot">robot</div>
+					
 					<!--        -->
 					<button type="submit" class="contato_content_form_btn">cadastrar</button>
 				</form>
@@ -319,8 +324,10 @@
 
 		<section class="wow fadeIn section faq" id="faq">
 			<div class="container faq_content">
-				<h1 class="faq_content_titulo titulo2">Perguntas frequentes</h1>
-				
+				<div class="faq_content_header">
+					<h1 class="faq_content_header titulo">Perguntas frequentes</h1>
+					<img src="img/faq-icon.png" alt="">
+				</div>
 				<select class="faq_content_select" name="" id="">
 					<option value="">1. Qual o período de participação da promoção?</option>
 				</select>
@@ -364,19 +371,23 @@
 						<li><a href="">Consumo responsável</a></li>
 						<li><a href="">Compre Skol</a></li>
 					</ul>
+					<div class="footer_content_social">
+						<p class="footer_content_social_txt">Conecte-se:</p>
+						<ul class="footer_content_social_media">
+							<li><a href=""><img src="img/face.png" alt="Facebook"></a></li>
+							<li><a href=""><img src="img/yt.png" alt="YouTube"></a></li>
+							<li><a href=""><img src="img/insta.png" alt="Instagram"></a></li>
+							<li><a href=""><img src="img/twitter.png" alt="Twitter"></a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="footer_content_social">
-					<p class="footer_content_social_txt">Conecte-se:</p>
-					<ul class="footer_content_social_media">
-						<li><a href=""><img src="img/face.png" alt="Facebook"></a></li>
-						<li><a href=""><img src="img/yt.png" alt="YouTube"></a></li>
-						<li><a href=""><img src="img/insta.png" alt="Instagram"></a></li>
-						<li><a href=""><img src="img/twitter.png" alt="Twitter"></a></li>
-					</ul>
+				<div class="footer_content_assinatura">
+					<p>2018 - Todos direitos reservados </p>
+					<p class="sep">|</p>
+					<p>Se for dirigir, não beba. Não compartilhe este conteúdo com menores de idade.</p>	
 				</div>
 
-				<p class="footer_content_direitos foot_txt">2018 - Todos direitos reservados</p>
-				<p class="footer_content_direitos">Se for dirigir, não beba. Não compartilhe este conteúdo com menores de idade.</p>
+				
 			</div>
 		</footer>
 	</div>
@@ -385,7 +396,7 @@
 		<script src="./js/slick.min.js"></script>
 		<script src="./js/jquery.easings.min.js"></script>
 		<script src="./js/scrolloverflow.min.js"></script>
-		<script src="./js/jquery.fullpage.min.js"></script>
+		<!-- <script src="./js/jquery.fullpage.min.js"></script> -->
 		<script src="./js/wow.min.js"></script>
 
 		<script>
@@ -421,13 +432,15 @@
 			});
 
 			
-			//new WOW().init();
+			new WOW().init();
 
 			$(document).ready(function() {
-				$('#fullpage').fullpage({
-					fitToSection: false,
-					verticalCentered: false
-				});
+				
+				// $('#fullpage').fullpage({
+				// 	fitToSection: false,
+				// 	verticalCentered: false
+				// });
+
 				$("button.hamburger").click(function() {
 					$("nav.header_content_menu_nav_menu").toggleClass("open"),
 					$(".hamburger").toggleClass("is-active")
@@ -443,7 +456,6 @@
 					$(".hamburger").removeClass("is-active")
 				});
 			});
-
 
 		</script>
 
