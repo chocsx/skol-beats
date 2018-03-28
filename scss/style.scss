@@ -272,139 +272,51 @@ p.txt1{
 	display: flex;
 	align-items: flex-end;
 	height: 100vh;
-	&_content{    
-		&_slide1{
-			position:relative;
+	&_content{
+		.slider{
+			max-width: 100%;
+			.slide{
 
-			&_img{
-				background-image: url("../img/skollbeats_lateral.png");
-				background-repeat: no-repeat;
-				background-size: cover;
-				height: 100vh;
-				width: 300px;
-				position: absolute;
-				left: -50px;
-			}
-
-			&_subtitulo{
-				//z-index: 100;
-				&_inner{
-					//color: var(--verde-lima);
-					max-width:235px;          
-				}       
-			}
-
-			&_txt{
-				//z-index: 100;
-				position:absolute;
-				right: 0;
-
-				&_inner{
-					color: var(--branco);
-					max-width: 210px;
-					font-weight: 300;         
-				}       
-			}
-
-			&_animaMusic{
-				// color: #fff;
-
-				&_inner{
-					padding: 250px 0;
-					width: 100%;
-					height: 150px;
-				}
-			}
-		}
-
-		&_slide2{
-
-			&_bottles{
-				& > *{
-					height:250px;
-					display:inline-block;
-					width: calc((100% - 20px) / 4);
-				}
-
-			}
-
-			&_subtitulo{
-				padding-top: 20px;
-			}
-
-			&_txt{
-				display: flex;
-				justify-content: flex-end;
-				padding-top:50px;
-
-				&_inner{
-					max-width:220px;
-					font-weight: 100;
-				}
-			}
-		}
-
-		&_slide3{
-
-			&_subtitulo{
-				&_inner{
-					max-width:220px;
-				}
-			}
-
-			&_txt{
-				display: flex;
-				justify-content: flex-end;
-				padding-top: 50px;
-				&_inner{
-					max-width: 200px;
-				}
-			}
-		}
-
-		&_slide4{
-			&_img{
-				// background-image: url("../img/skollbeats_lateral.png");
-				// background-repeat: no-repeat;
-				// background-size: cover;
-				// height: 100vh;
-				// width: 300px;
-				// position: absolute;
-				// right: 50px;
-			}
-			&_subtitulo{
-				position: absolute;
-				top: 30px;
-				left: 0;
-				z-index: 999;
-				&_inner{
-					&.subtitulo1{
-						max-width: 100%;
-
+				position: relative;
+				// display: none;
+				// &.active{
+				// 	display: block;
+				// } 
+				img{
+					@media (min-width: 600px){
+						max-height: 300px;	
+						max-width: 273px;
+						// display: block;
+						// margin: 0 auto;
 					}
 				}
-			}
+				&_subtitulo{
+					&_inner{
+						position: absolute;
+						// top: 30px;
+						// left: 0;
+						z-index: 999;
+						&.subtitulo1{
+							max-width: 100%;
+						}
+					}
+				}
 
-			&_animaPlaylist{
 				
-				&_inner{
-					img{
-						display: block;
-						margin: 0 auto;
-						max-height: 500px;
+						
+
+
+				&_txt{
+					&_inner{
+						position: absolute;
+						bottom: 30px;
+						right: 0;
+						display: flex;
+						justify-content: flex-end;
+						max-width:185px;
 					}
 				}
-			}
-
-			&_txt{
-				position: absolute;
-				bottom: 30px;
-				right: 0;
-				display: flex;
-				justify-content: flex-end;
-				&_inner{
-					max-width:185px;
-				}
+				
 			}
 		}
 	}
@@ -414,13 +326,18 @@ p.txt1{
 .videos{
 	height: 100vh;
 	padding: 0;
+	@media (min-width: 1024px){
+		height: auto;
+	}
 	&_content{
 		display: flex;
 		flex: 1;
 		flex-direction: column;
 		color: #fff;
 		padding: 0;
-
+		@media (min-width: 1024px){
+			flex-direction: row;
+		}
 		&_selectvideos {
 
 			img{
